@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "권한이 없어서 전화 연결에 싶패했습니다.", Toast.LENGTH_SHORT).show()
                 }
             }
+
             TedPermission.create()
                 .setPermissionListener(permissionlistener)
                 .setDeniedMessage("전화 연결 권한이 필요합니다. [설정] 에서 진행해 주세요.")
